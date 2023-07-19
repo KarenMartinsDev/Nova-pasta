@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo de Advinhação</title>
 </head>
+
 <body>
-    <main>
-        
-        <h1>Jogo da Adivinhação</h1>
-        <p>Advinhe o número entre 0 e 10</p>
-
-        <form>
-            <input type="number">
-            <button>Tentar</button>
+  <main>
+    <div class="screen1">
+      <h1> Jogo da Adivinhação </h1>
+      <p> Advinhe o número entre 0 e 10 </p>
+      <form>
+        <input id="inputNumber" type="number">
+        <button id="btnTry">Tentar</button>
         </form>
+    </div>
 
-    </main>
+    <div class="screen2 hide">
+      <h2> Acertou em 3 tentativas </h2>
+      <button id="btnReset"> Tentar novamente </button>
+    </div>        
+  </main>
+  <script src="./script.js"></script>
 </body>
 </html>
